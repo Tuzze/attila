@@ -45,6 +45,10 @@ class PostGres
     end
   end
 
+  def query(q)
+    @connection.exec(q)
+  end
+
 end
 
 end
